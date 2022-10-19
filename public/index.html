@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Emortech FE Internship Assessment</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+    <section>
+        <header>
+            <nav class="bg-[#33A0D9] h-[104px]">
+                <ul class="flex h-full max-w-full items-center mx-52">
+                    <li class="mr-auto"><img class="w-40" src="./assets/logo.png" alt="Logo"></li>
+                    <li class="mx-[38px] text-xl font-bold cursor-pointer">Join a Race</li>
+                    <li class="mx-[38px] text-xl font-bold cursor-pointer">Leaderboard</li>
+                    <li class="ml-[38px] text-xl font-bold cursor-pointe"><button
+                            class="bg-white px-8 py-2 rounded-lg">Login</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="w-[full] h-[80vh] flex items-center justify-center">
+            <div class="flex flex-col">
+                <h1 class="text-4xl mb-4">Password Reset</h1>
+                <h3 class="mb-4 font-bold">NEW PASSWORD</h3>
+                <input class="mb-8 border-2 border-black pl-2" type="password" id="inputOne">
+                <h3 class="mb-4 font-bold">RE-ENTER NEW PASSWORD</h3>
+                <input class="border-2 border-black pl-2" type="password" id="inputTwo">
+                <p class="text-red-500" id="errorText"></p>
+                <button class="bg-black text-white py-3 mt-12 rounded-lg font-bold" id="resetBtn">RESET
+                    PASSWORD</button>
+            </div>
+        </main>
+    </section>
+    <script src="./script.js" async defer></script>
+</body>
+
+</html>
