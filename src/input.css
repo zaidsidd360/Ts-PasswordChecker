@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('http://fonts.cdnfonts.com/css/avenir-next-lt-pro');
+
+body {
+    font-family: 'Avenir Next LT Pro', sans-serif;
+}
+
+.bg-main {
+    background: url("../public/assets/backdrop.png") no-repeat center center;
+    background-size: cover;
+
+}
+
+.bg-overlay {
+    background: rgba(255, 255, 255, 0.752);
+}
