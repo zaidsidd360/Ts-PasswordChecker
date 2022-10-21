@@ -15,11 +15,10 @@ const doesContainNum = (val1) => {
   return val1.match(pattern);
 };
 
-resetBtn.addEventListener("click", () => {
-  const inputOne = document.getElementById("inputOne");
-  const inputTwo = document.getElementById("inputTwo");
-  let inputOneVal = inputOne.value;
-  let inputTwoVal = inputTwo.value;
+resetBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  const inputOneVal = document.getElementById("inputOne").value;
+  const inputTwoVal = document.getElementById("inputTwo").value;
 
   const mainContent = document.getElementById("main");
   const afterReset = document.getElementById("afterReset");

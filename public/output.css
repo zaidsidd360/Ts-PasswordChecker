@@ -557,27 +557,22 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.mx-40 {
-  margin-left: 10rem;
-  margin-right: 10rem;
+.m-2 {
+  margin: 0.5rem;
 }
 
-.mx-\[38px\] {
-  margin-left: 38px;
-  margin-right: 38px;
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
-.mx-16 {
-  margin-left: 4rem;
-  margin-right: 4rem;
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .mr-auto {
   margin-right: auto;
-}
-
-.ml-\[38px\] {
-  margin-left: 38px;
 }
 
 .mb-4 {
@@ -604,8 +599,12 @@ video {
   height: 100vh;
 }
 
-.h-\[10vh\] {
-  height: 10vh;
+.h-auto {
+  height: auto;
+}
+
+.h-20 {
+  height: 5rem;
 }
 
 .h-full {
@@ -616,12 +615,12 @@ video {
   height: 77vh;
 }
 
-.h-\[13vh\] {
-  height: 13vh;
-}
-
 .w-40 {
   width: 10rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-\[full\] {
@@ -654,6 +653,10 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .rounded-lg {
@@ -689,6 +692,11 @@ video {
   background-color: rgb(33 128 178 / var(--tw-bg-opacity));
 }
 
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -718,6 +726,10 @@ video {
   line-height: 2.5rem;
 }
 
+.text-\[12px\] {
+  font-size: 12px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -726,9 +738,9 @@ video {
   font-style: italic;
 }
 
-.text-red-500 {
+.text-\[\#EB5757\] {
   --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
+  color: rgb(235 87 87 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -747,4 +759,63 @@ body {
 
 .bg-overlay {
   background: rgba(255, 255, 255, 0.752);
+}
+
+@media (min-width: 640px) {
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
+  .sm\:h-\[10vh\] {
+    height: 10vh;
+  }
+
+  .sm\:h-\[13vh\] {
+    height: 13vh;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .lg\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .lg\:mx-\[38px\] {
+    margin-left: 38px;
+    margin-right: 38px;
+  }
+
+  .lg\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .lg\:ml-\[38px\] {
+    margin-left: 38px;
+  }
 }

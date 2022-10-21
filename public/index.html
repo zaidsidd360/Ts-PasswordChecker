@@ -13,31 +13,34 @@
 <body>
     <section class="h-[100vh]">
         <header>
-            <nav class="bg-[#33A0D9] h-[10vh]">
-                <ul class="flex h-full max-w-full items-center mx-40">
+            <nav class="bg-[#33A0D9] h-auto sm:h-[10vh] flex sm:block justify-between items-center px-7 sm:px-0">
+                <img class="w-40 h-20 sm:hidden" src="./assets/logo.png" alt="">
+                <ul class="hidden sm:flex h-full max-w-full items-center mx-10 lg:mx-20">
                     <li class="mr-auto"><img class="w-40" src="./assets/logo.png" alt="Logo"></li>
-                    <li class="mx-[38px] text-xl font-bold cursor-pointer">Join a Race</li>
-                    <li class="mx-[38px] text-xl font-bold cursor-pointer">Leaderboard</li>
-                    <li class="ml-[38px] text-xl font-bold cursor-pointe"><button
+                    <li class="mx-2 lg:mx-[38px] text-xl font-bold cursor-pointer">Join a Race</li>
+                    <li class="mx-2 lg:mx-[38px] text-xl font-bold cursor-pointer">Leaderboard</li>
+                    <li class="mx-2 lg:ml-[38px] text-xl font-bold cursor-pointe"><button
                             class="bg-white px-8 py-2 rounded-lg">Login</button>
                     </li>
                 </ul>
+                <img class="sm:hidden w-10" src="./assets/ham.svg" alt="menu">
             </nav>
         </header>
         <main class="w-[full] h-[77vh] bg-main">
             <div class="flex items-center justify-center h-full bg-overlay">
-                <div class="flex flex-col" id="main">
+                <form class="flex flex-col" id="main">
                     <h1 class="text-4xl mb-4 font-bold">Password Reset</h1>
                     <h3 class="mb-4 font-bold">NEW PASSWORD</h3>
                     <input class="mb-8 border-2 border-black pl-2" type="password" id="inputOne">
                     <h3 class="mb-4 font-bold">RE-ENTER NEW PASSWORD</h3>
                     <input class="border-2 border-black pl-2" type="password" id="inputTwo">
-                    <p class="text-red-500 italic" id="matchPara"></p>
-                    <p class="text-red-500 italic" id="lengthPara"></p>
-                    <p class="text-red-500 italic" id="numPara"></p>
-                    <button class="bg-black text-white py-3 mt-12 rounded-lg font-bold" id="resetBtn">RESET
+                    <p class="text-[#EB5757] italic text-[12px] font-bold" id="matchPara"></p>
+                    <p class="text-[#EB5757] italic text-[12px] font-bold" id="lengthPara"></p>
+                    <p class="text-[#EB5757] italic text-[12px] font-bold" id="numPara"></p>
+                    <button class="bg-black text-white py-3 mt-12 rounded-lg font-bold" id="resetBtn"
+                        type="submit">RESET
                         PASSWORD</button>
-                </div>
+                </form>
                 <div class="hidden max-w-sm" id="afterReset">
                     <h1 class="text-4xl mb-4 font-bold">Password Changed</h1>
                     <p>Your password has been updated! Now get back
@@ -47,12 +50,12 @@
             </div>
         </main>
         <footer>
-            <div class="w-full h-[13vh] bg-[#2180B2] flex items-center justify-center">
-                <ul class="flex items-center">
-                    <li class="mx-16 text-white font-bold text-xl">About Us</li>
-                    <li class="mx-16 text-white font-bold text-xl">Privacy Policy</li>
-                    <li class="mx-16 text-white font-bold text-xl">Tutorials</li>
-                    <li class="mx-16 text-white font-bold text-xl">Terms of Service</li>
+            <div class="w-full h-auto sm:h-[13vh] bg-[#2180B2] flex items-center justify-center">
+                <ul class="flex flex-col sm:flex-row items-center">
+                    <li class="lg:mx-16 md:mx-4 m-2 text-white font-bold text-xl">About Us</li>
+                    <li class="lg:mx-16 md:mx-4 m-2 text-white font-bold text-xl">Privacy Policy</li>
+                    <li class="lg:mx-16 md:mx-4 m-2 text-white font-bold text-xl">Tutorials</li>
+                    <li class="lg:mx-16 md:mx-4 m-2 text-white font-bold text-xl">Terms of Service</li>
                 </ul>
             </div>
         </footer>
